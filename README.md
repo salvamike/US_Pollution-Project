@@ -7,10 +7,10 @@
 4. Samantha Borresch
 
 # Roles
-1. McKaye Peterson – Machine Learning Model
+1. McKaye Peterson ï¿½ Machine Learning Model
 2. Celia - Presentation
-3. Michael Rodriguez – Github and ETL
-4. Samantha Borresch – Visualizations
+3. Michael Rodriguez ï¿½ Github and ETL
+4. Samantha Borresch ï¿½ Visualizations
 
 # Project
 Based on nearly two decades worth of air quality data, can we determine the top 5 most polluted states and predict their future air quality?
@@ -34,23 +34,23 @@ Information on air pollution
 
 
 # Four Pollutants
-1. Nitrogen Dioxide (NO2) – is the indicator for overall level of air pollution emitted by motor vehicles
+1. Nitrogen Dioxide (NO2) ï¿½ is the indicator for overall level of air pollution emitted by motor vehicles
 
 # Data Source Metrics
-- Row Number – unique identifier
-- State Code – state id by US EPA
-- County Code – county id by US EPA
-- Site Num – unique code for each address
-- Address – for monitoring site
-- State – for monitoring site
-- County – for monitoring site
-- City – for monitoring site
-- Date Local – date of monitoring
-- NO2 Units – units of measure = parts per billion (ppb)
-- NO2 Mean – concentration of pollution within a given day
-- NO2 1st Max Value – max value for pollutant concentration in a given day
-- NO2 1st Max Hour – max level of pollutant at military hour
-- NO2 AQI – calculate air quality index within a given day
+- Row Number ï¿½ unique identifier
+- State Code ï¿½ state id by US EPA
+- County Code ï¿½ county id by US EPA
+- Site Num ï¿½ unique code for each address
+- Address ï¿½ for monitoring site
+- State ï¿½ for monitoring site
+- County ï¿½ for monitoring site
+- City ï¿½ for monitoring site
+- Date Local ï¿½ date of monitoring
+- NO2 Units ï¿½ units of measure = parts per billion (ppb)
+- NO2 Mean ï¿½ concentration of pollution within a given day
+- NO2 1st Max Value ï¿½ max value for pollutant concentration in a given day
+- NO2 1st Max Hour ï¿½ max level of pollutant at military hour
+- NO2 AQI ï¿½ calculate air quality index within a given day
 - O3 Units 
 - O3 Mean
 - O3 1st Max Value
@@ -66,7 +66,7 @@ Information on air pollution
 - CO 1st Max Hour
 - CO AQI
 
-# ETL – Michael
+# ETL ï¿½ Michael
 - Goal: Keep all 28 metrics but decrease data points to make machine learning.
 - Remove Null and/or N/A values
 - Use Jupyter Notebook to determine the top 5 overall polluted states based on AQI for each pollutant for all 16-years. We utilize the CO AQI, SO2 AQI, NO2 AQI, O3 AQI, Site Num, and Date Local. Take an average of all four pollutants AQI data and group by Site Num and Date Local.
@@ -79,11 +79,11 @@ Information on air pollution
 1. A predictive model
 2. Uses linear historical data
 
-# Visualizations (Tableau Story Board) – Sam
+# Visualizations (Tableau Story Board) ï¿½ Sam
 1. Trend line of top 5 cities/states overall pollution levels for 16-years of historic data.
 2. Top 5 most polluted cities/states levels of each major air pollutants (Nitrogen Dioxide, Sulphur Dioxide, Carbon Monoxide and Ozone).
 3. Geographical heat map showing air quality levels based on historic data.
-4. How should we display the models’ predictions for air quality?
+4. How should we display the modelsï¿½ predictions for air quality?
 
 # Presentation - Celia
 
