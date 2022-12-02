@@ -7,10 +7,10 @@
 4. Samantha Borresch
 
 # Roles
-1. McKaye Peterson � Machine Learning Model
+1. McKaye Peterson - Machine Learning Model
 2. Celia - Presentation
-3. Michael Rodriguez � Github and ETL
-4. Samantha Borresch � Visualizations
+3. Michael Rodriguez - Github and ETL
+4. Samantha Borresch - Visualizations
 
 # Project
 Based on nearly two decades worth of air quality data, can we determine the top 5 most polluted states and predict their future air quality?
@@ -37,7 +37,7 @@ Information on air pollution
 1. Nitrogen Dioxide (NO2) � is the indicator for overall level of air pollution emitted by motor vehicles
 
 # Data Source Metrics
-- Row Number � unique identifier
+- Row Number - unique identifier
 - State Code � state id by US EPA
 - County Code � county id by US EPA
 - Site Num � unique code for each address
