@@ -86,5 +86,3 @@ Information on air pollution
 4. How should we display the models  predictions for air quality?
 
 # Presentation - Celia
-
-
