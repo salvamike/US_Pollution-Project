@@ -126,6 +126,13 @@ Package to use: SKlearn.linear_model import LinearRegression
 We will Use a random state of 1 for each algorithm to ensure consistency between tests
 # Machine Learning Model Goal:
 - This machine learning process will help us predict the future pollutant levels of the states ranked most polluted in 2016. 
+### Output labels for this dataset will be:
+target column values = 
+1. Need to identify the threshold for dangerous levels of pollutants
+* pollutant levels in the form of AQI = classified by "high_levels" and "low_levels"
+feature column values =
+- state and date
+
 
 
 # Dashboard - Sam
