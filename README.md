@@ -98,6 +98,20 @@ We have decided to only keep the following rows: those records for top 5 most ov
 # Machine Learning Model - McKaye
 1. A predictive model
 2. Uses linear historical data
+- Features are the variables used to make a prediction. Target is the predicted outcome.
+### Features: 
+- State/City
+- NO2 AQI, CO2 AQI, SO2 AQI, CO AQI
+- Date (in order to see how the pollution has progressed over time)
+Inspect the relationship between date and pollution levels in certain location 
+### Target: 
+- The target VARIABLE is pollution levels, meaning that the goal of the linear regression model is to predict future pollution levels based on historical pollution levels in a given area.
+- Independent variable is on the x axis and the dependent variable is on the y axis
+Package to use: SKlearn.linear_model import LinearRegression
+* Inspect the relationship between state and pollution levels
+
+ Supervised learning model: create a model, train the model, and then create predictions.
+
 
 # Dashboard - Sam
 1. Trend line of top 5 states overall pollution levels for 16-years of historic data.
