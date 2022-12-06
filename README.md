@@ -172,6 +172,8 @@ Package to use: SKlearn.linear_model import LinearRegression
 4. Generate a classication report using the `imbalanced_classification_report` from imbalanced-learn.
 5. For the Balanced Random Forest Classifier onely, print the feature importance sorted in descending order (most important feature to least important) along with the feature score
 We will Use a random state of 1 for each algorithm to ensure consistency between tests
+# Machine Learning Model Goal:
+- This machine learning process will help us predict the future pollutant levels of the states ranked most polluted in 2016. 
 
 
 
