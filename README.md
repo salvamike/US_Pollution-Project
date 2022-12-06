@@ -111,6 +111,19 @@ Package to use: SKlearn.linear_model import LinearRegression
 * Inspect the relationship between state and pollution levels
 
  Supervised learning model: create a model, train the model, and then create predictions.
+* Our database = csv file contained 16 years of pollution data across the united states.
+* Once the ETL process has been completed on the dataset, the we can read in the file to the machine learning model and begin the process.
+# Provisional Machine Learning Model
+- Our process will include the following:
+- Reading in the ETL Dataset
+- Then, splitting the data into training and testing
+- Note: The data will be split by its features and target, which are mentioned above
+1. Train the model using the training data. 
+2. Calculate the balanced accuracy score from sklearn.metrics.
+3. Print the confusion matrix from sklearn.metrics.
+4. Generate a classication report using the `imbalanced_classification_report` from imbalanced-learn.
+5. For the Balanced Random Forest Classifier onely, print the feature importance sorted in descending order (most important feature to least important) along with the feature score
+We will Use a random state of 1 for each algorithm to ensure consistency between tests
 
 
 # Dashboard - Sam
