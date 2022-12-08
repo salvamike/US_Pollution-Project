@@ -132,7 +132,20 @@ target column values =
 * pollutant levels in the form of AQI = classified by "high_levels" and "low_levels"
 feature column values =
 - state and date
-
+# Machine Learning Model 2 Segment Deliverable
+Description of preliminary data preprocessing
+- data preprocessing included finding a combined average of all the pollutants for each state. This required retrieving the average for the added up counties. From there, we were able to get the states average pollutant levels from that year. Then, we combined the ten years of data (represented by ten different .csv files) to create a single database.
+Description of preliminary feature engineering and preliminary feature election, including their decision-making process
+- Feature engineering includes relabeling the column with the combined AQI to be the target, or the dependent variable
+- The categorical variable is the state
+- The date will be relabeled to be the independent variable
+Description of how data was split into training and testing sets
+1. seperate the data into its features and targets
+Explanation of model choice, including limitations and benefits
+- We will be using sklearn.model_selection to train_test_split
+- Then using BalancedRandomForestClassifier, the data will be resampled
+- Next, we will output the balanced accuracy score and the confusion matrix
+- Benefits include sensitivity, but is limited by potentially misidentifying pollutant levels.
 
 
 # Dashboard - Sam
