@@ -60,8 +60,8 @@ Air Quality Index (AQI) is a scale of 0 to 500 and the higher the AQI value the 
 - Days PM10: Count of days with extreme levels of particle pollutions
 
 # ETL - Samantha
-1. Download 11 CSV files
-2. Create script in Jupyter Notebook
+1. Download 11 CSV [files](https://github.com/salvamike/US_Pollution-Project/tree/main/Data_Sources)
+2. Create [script](https://github.com/salvamike/US_Pollution-Project/blob/main/US_Pollution_Script.ipynb) in Jupyter Notebook
 3. Import Pandas, Glob, and OS libraries
 4. Establish path directory to CSV files
 5. Concatenate 11 CSV files into one dataframe
@@ -70,7 +70,7 @@ Air Quality Index (AQI) is a scale of 0 to 500 and the higher the AQI value the 
 8. Create a dataframe for each individual year (2012-2022) and sort by "Median AQI" ascending
 9. Take average of top 15 results for each dataframe by year to determine most overall polluted states
 10. Create a dataframe with only top 6 polluted states data
-11. Export as a new CSV file for machine learning model
+11. Export as a new CSV [file](https://github.com/salvamike/US_Pollution-Project/blob/main/Top_6_Most_Polluted_US_States.csv) for machine learning model
 
 # Machine Learning Model - McKaye
 1. A predictive model
