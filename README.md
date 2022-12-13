@@ -8,16 +8,17 @@
 
 ## Roles
 1. McKaye Peterson - Machine Learning Model
-2. Celia - Presentation
-3. Michael Rodriguez - Github 
-4. Samantha Borresch - ETL
+2. Celia - Presentation & Visuals
+3. Michael Rodriguez - Github & Visuals
+4. Samantha Borresch - Database & ETL
 
 # Project Topic
-Based on a decade of air quality data from 2012-2022, can we determine the top 6 overall polluted states and can we use these findings to predict their future AQI levels?
+Based on a decade of air quality data from 2012-2022, can we determine the top 5 most overall polluted cilties and top 5 overall least polluted cities and can we use these findings to predict their future AQI levels?
 
 ## Research Questions
-1. What are the top 5 most overall polluted states based on AQI data?
-2. Can we predict the next 10-years of pollution levels for the top 6 most polluted states?
+1. What are the top 5 most overall polluted cities based on AQI data?
+2. What are the top 5 most overall least polluted cities based on AQI data?
+2. Can we predict the next year of pollution levels for these cities?
 
 ## Why We Selected Topic?
 All members live in the greater Northern Utah area and have an interest in air quality and pollution, as this is a common issue among locals.
@@ -60,17 +61,25 @@ Air Quality Index (AQI) is a scale of 0 to 500 and the higher the AQI value the 
 - Days PM10: Count of days with extreme levels of particle pollutions
 
 # ETL - Samantha
-1. Download 11 CSV [files](https://github.com/salvamike/US_Pollution-Project/tree/main/Data_Sources)
-2. Create [script](https://github.com/salvamike/US_Pollution-Project/blob/main/US_Pollution_Script.ipynb) in Jupyter Notebook
-3. Import Pandas, Glob, and OS libraries
-4. Establish path directory to CSV files
-5. Concatenate 11 CSV files into one dataframe
-6. Check all data properly concatenated
-7. Split CBSA column into two new columns and rename "City" and "State"
-8. Create a dataframe for each individual year (2012-2022) and sort by "Median AQI" ascending
-9. Take average of top 15 results for each dataframe by year to determine most overall polluted states
-10. Create a dataframe with only top 6 polluted states data
-11. Export as a new CSV [file](https://github.com/salvamike/US_Pollution-Project/blob/main/Top_6_Most_Polluted_US_States.csv) for machine learning model
+## Process
+1. Create ERD for database
+2.Create databse in Postgresql
+3. Create tables for each data source (x11)
+4. Import data to each of the data sources (x11)
+5. Create a "Master" table and join the sources
+6. Create [script](https://github.com/salvamike/US_Pollution-Project/blob/main/Second%20Attempt/ETL_Script_2.ipynb) in Jupyter Notebook
+7. Import Pandas, Psycopg, and SQLAlchemy libraries
+8. Create engine instance
+9. Connect Postgresql "Master" table to Pandas
+10. Read in "Master" table
+11. Display "Master" table
+12. Determine top 5 worst AQI cities
+13. Determine top 5 best AQI cities
+
+## Files
+- [ERD Visual](https://github.com/salvamike/US_Pollution-Project/blob/main/Second%20Attempt/Entity_Relationship_Diagram_ERD.png)
+- [Master Table Script](https://github.com/salvamike/US_Pollution-Project/blob/main/Second%20Attempt/PostgreSQL_Database_Script.txt)
+- [ETL Script](https://github.com/salvamike/US_Pollution-Project/blob/main/Second%20Attempt/ETL_Script_2.ipynb)
 
 # Machine Learning Model - McKaye
 1. A predictive model
