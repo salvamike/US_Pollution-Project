@@ -6,85 +6,29 @@
 3. Michael Rodriguez
 4. Samantha Borresch
 
-
-# Roles
-1. McKaye Peterson   Machine Learning Model
-2. Celia - Presentation
-3. Michael Rodriguez   Github and ETL
-4. Samantha Borresch   Visualizations
-=======
 ## Roles
 1. McKaye Peterson - Machine Learning Model
-2. Celia - Presentation
-3. Michael Rodriguez - Github and ETL
-4. Samantha Borresch - Dashboard and Note Taking
+2. Celia - Presentation & Visuals
+3. Michael Rodriguez - Github & Visuals
+4. Samantha Borresch - Database & ETL
 
 # Project Topic
-Based on nearly two decades worth of air quality data, can we determine the top 5 overall polluted states and can we use these findings to predict their future AQI levels?
+Based on a decade of air quality data from 2012-2022, can we determine the top 5 most overall polluted cilties and top 5 overall least polluted cities and can we use these findings to predict their future AQI levels?
 
 ## Research Questions
-1. What are the top 5 most overall polluted states based on historic data?
-2. What are the top 5 most polluted states for each four air pollutants based on historic data?
-3. Can we predict the next 10-years of pollution levels for the top 5 most polluted states based on historic data?
+1. What are the top 5 most overall polluted cities based on AQI data?
+2. What are the top 5 most overall least polluted cities based on AQI data?
+2. Can we predict the next year of pollution levels for these cities?
 
-## Why We Selected Topic
+## Why We Selected Topic?
 All members live in the greater Northern Utah area and have an interest in air quality and pollution, as this is a common issue among locals.
 
 ## Data Source
-A CSV file scraped from the US EPA database with over 1.4 million data points that spans over 16-years of major air pollutant metrics.
-- https://www.kaggle.com/datasets/sogun3/uspollution
+The data source includes 11 seperate CSV files provided by the United States Environmental Protection Agency (EPA). Each file is the data for each fiscal year.
+
+Link: https://aqs.epa.gov/aqsweb/airdata/download_files.html#Annual
 
 # Data Exploration
-## Information on air pollution
-- https://datasetsearch.research.google.com/search?query=pollution&docid=L2cvMTFqOWJtNnFzMA%3D%3D
-- https://www.airnow.gov/aqi/aqi-basics/
-
-- 
-
-
-# Four Pollutants
-1. Nitrogen Dioxide (NO2)   is the indicator for overall level of air pollution emitted by motor vehicles
-
-# Data Source Metrics
-- Row Number   unique identifier
-- State Code   state id by US EPA
-- County Code   county id by US EPA
-- Site Num   unique code for each address
-- Address   for monitoring site
-- State   for monitoring site
-- County   for monitoring site
-- City   for monitoring site
-- Date Local   date of monitoring
-- NO2 Units   units of measure = parts per billion (ppb)
-- NO2 Mean   concentration of pollution within a given day
-- NO2 1st Max Value   max value for pollutant concentration in a given day
-- NO2 1st Max Hour   max level of pollutant at military hour
-- NO2 AQI   calculate air quality index within a given day
-- O3 Units 
-- O3 Mean
-- O3 1st Max Value
-- O3 1st Max Hour
-- O3 AQI
-- SO2 Units
-- SO2 Mean
-- SO2 1st Max Value
-- SO2 AQI
-- CO Units
-- CO Mean
-- CO 1st Max Value
-- CO 1st Max Hour
-- CO AQI
-
-# ETL   Michael
-- Goal: Keep all 28 metrics but decrease data points to make machine learning.
-=======
-
-## Four Pollutants
-1. Nitrogen Dioxide (NO2) - is the indicator for overall level of air pollution emitted by motor vehicles, coal, oil, and other fossil fuels. High levels of NO2 are damaging to ecosystems, nature, and health.
-2. Ozone (O3) - a gas in the atmosphere that absorbs UV rays from the sun to protect living organisms such as plants, animals and humans. Ground-level pollutants in high numbers negatively impacts the ecosystems, nature, and health.
-3. Sulphur Dioxide (SO2) - gases emitted by the burning of materials that include sulfur, such as fossil fuels. High levels of SO2 are damaging to ecosystems, nature, and health.
-4. Carbon Monoxide (CO) - is a colorless and odorless gas that is harmfuled when inhaled. The higher the CO level the more harmful it is.
-
 ## AQI
 Air Quality Index (AQI) is a scale of 0 to 500 and the higher the AQI value the greater the level of air pollution and health concern. 
   - Green = Good = 0 to 50 = little to no risk
@@ -93,66 +37,62 @@ Air Quality Index (AQI) is a scale of 0 to 500 and the higher the AQI value the 
   - Red = Unhealthy = 151 to 200 = may experience health effects
   - Purple = Very Unhealthy = 201 to 300 = increased risk for health effects
   - Maroon = Haszardous = 301+ = emergency health condition warning
-  
-## Top Major AQI Factors
-1. O3 = ground-level ozone
-2. CO
-3. SO2
-4. NO2
+ 
+ Link: https://www.airnow.gov/aqi/aqi-basics/
 
 ## Data Source Metrics
-- Row Number - unique identifier
-- State Code - state id by US EPA
-- County Code - county id by US EPA
-- Site Num - unique code for each address
-- Address - for monitoring site
-- State - for monitoring site
-- County - for monitoring site
-- City - for monitoring site
-- Date Local - date of monitoring
-- NO2 Units - units of measure = parts per billion (ppb)
-- NO2 Mean - concentration of pollution within a given day
-- NO2 1st Max Value - max value for pollutant concentration in a given day
-- NO2 1st Max Hour - max level of pollutant at military hour
-- NO2 AQI - calculate air quality index within a given day
-- O3 Units - units of measure = parts per million (ppm)
-- O3 Mean - concentration of pollution within a given day
-- O3 1st Max Value - max value for pollutant concentration in a given day
-- O3 1st Max Hour - max level of pollutant at military hour
-- O3 AQI - calculate air quality index within a given day
-- SO2 Units - units of measure = parts per billion (ppb)
-- SO2 Mean - concentration of pollution within a given day
-- SO2 1st Max Value - max value for pollutant concentration in a given day
-- SO2 1st Max Hour - max level of pollutant at military hour
-- SO2 AQI - calculate air quality index within a given day
-- CO Units - units of measure = parts per million (ppm)
-- CO Mean - concentration of pollution within a given day
-- CO 1st Max Value - max value for pollutant concentration in a given day
-- CO 1st Max Hour - max level of pollutant at military hour
-- CO AQI - calculate air quality index within a given day
+- CBSA: Metropolitan area
+- CBSA: Metropolitan area unique identifier code
+- Year: Year data was collected
+- Days with AQI: Count of how many days each CBSA collected AQI data
+- Good Days: Count of how many good days that CBSA had in one fiscal year
+- Moderate Days: Count of how many moderate days that CBSA had in one fiscal year
+- Unhealthy for Sensitive Groups Days: Count of how many unhealthy for sensitive group days that CBSA had in one fiscal year
+- Unhealthy Days: Count of how many unhealthy days that CBSA had in one fiscal year
+- Very Unhealthy Days: Count of how many very unhealthy days that CBSA had in one fiscal year
+- Hazardous Days: Count of how many hazardous days that CBSA had in one fiscal year
+- Max AQI: The highest AQI value for that CBSA within one fical year
+- 90th Percentile AQI: The 90th percentile AQI score for that CBSA within one fiscal year
+- Median AQI: The middle collected value for AQI data for that CBSA within one fiscal year
+- Days CO: Count of days with high levels of carbon monoxide
+- Days NO2: Count of days with high levels of nitrogen dioxide
+- Days Ozone: Count of days with high levels of ground-level ozone
+- Days PM2.5: Count of days with high levels of particle pollutions
+- Days PM10: Count of days with extreme levels of particle pollutions
 
-We have decided to only keep the following columns: state code, state, city, date local, NO2 AQI, SO2 AQI, CO AWI and O3 AQI.
-We have decided to only keep the following rows: those records for top 5 most overall polluted state and top 5 most polluted state for each individual pollutant.
+# ETL - Samantha
+## Process
+1. Create ERD for database
+2.Create databse in Postgresql
+3. Create tables for each data source (x11)
+4. Import data to each of the data sources (x11)
+5. Create a "Master" table and join the sources
+6. Create [script](https://github.com/salvamike/US_Pollution-Project/blob/main/Second%20Attempt/ETL_Script_2.ipynb) in Jupyter Notebook
+7. Import Pandas, Psycopg, and SQLAlchemy libraries
+8. Create engine instance
+9. Connect Postgresql "Master" table to Pandas
+10. Read in "Master" table
+11. Display "Master" table
+12. Determine top 5 worst AQI cities
+13. Determine top 5 best AQI cities
 
-# Database/ETL - Michael
-
-- Remove Null and/or N/A values
-- Use Jupyter Notebook to determine the top 5 overall polluted states based on AQI for each pollutant for all 16-years. We utilize the CO AQI, SO2 AQI, NO2 AQI, O3 AQI, Site Num, and Date Local. Take an average of all four pollutants AQI data and group by Site Num and Date Local.
-- Use Jupyter Notebook to determine the top 5 polluted states for each pollutant. Utilizing CO AQI, SO2 AQI, NO2 AQI and O3 AQI.
-- Remove all irrelevant data records.
-- Create new file
-- Upload to Github for McKaye machine learning
+## Files
+- [ERD Visual](https://github.com/salvamike/US_Pollution-Project/blob/main/Second%20Attempt/Entity_Relationship_Diagram_ERD.png)
+- [Master Table Script](https://github.com/salvamike/US_Pollution-Project/blob/main/Second%20Attempt/PostgreSQL_Database_Script.txt)
+- [ETL Script](https://github.com/salvamike/US_Pollution-Project/blob/main/Second%20Attempt/ETL_Script_2.ipynb)
 
 # Machine Learning Model - McKaye
 1. A predictive model
 2. Uses linear historical data
 - Features are the variables used to make a prediction. Target is the predicted outcome.
-### Features: 
+
+## Features: 
 - State/City
 - NO2 AQI, CO2 AQI, SO2 AQI, CO AQI
 - Date (in order to see how the pollution has progressed over time)
 Inspect the relationship between date and pollution levels in certain location 
-### Target: 
+
+## Target: 
 - The target VARIABLE is pollution levels, meaning that the goal of the linear regression model is to predict future pollution levels based on historical pollution levels in a given area.
 - Independent variable is on the x axis and the dependent variable is on the y axis
 Package to use: SKlearn.linear_model import LinearRegression
@@ -161,7 +101,8 @@ Package to use: SKlearn.linear_model import LinearRegression
  Supervised learning model: create a model, train the model, and then create predictions.
 * Our database = csv file contained 16 years of pollution data across the united states.
 * Once the ETL process has been completed on the dataset, the we can read in the file to the machine learning model and begin the process.
-# Provisional Machine Learning Model
+
+## Provisional Machine Learning Model
 - Our process will include the following:
 - Reading in the ETL Dataset
 - Then, splitting the data into training and testing
@@ -172,15 +113,18 @@ Package to use: SKlearn.linear_model import LinearRegression
 4. Generate a classication report using the `imbalanced_classification_report` from imbalanced-learn.
 5. For the Balanced Random Forest Classifier onely, print the feature importance sorted in descending order (most important feature to least important) along with the feature score
 We will Use a random state of 1 for each algorithm to ensure consistency between tests
-# Machine Learning Model Goal:
+
+## Machine Learning Model Goal:
 - This machine learning process will help us predict the future pollutant levels of the states ranked most polluted in 2016. 
+
 ### Output labels for this dataset will be:
 target column values = 
 1. Need to identify the threshold for dangerous levels of pollutants
 * pollutant levels in the form of AQI = classified by "high_levels" and "low_levels"
 feature column values =
 - state and date
-# Machine Learning Model 2 Segment Deliverable
+
+## Machine Learning Model 2 Segment Deliverable
 Description of preliminary data preprocessing
 - data preprocessing included finding a combined average of all the pollutants for each state. This required retrieving the average for the added up counties. From there, we were able to get the states average pollutant levels from that year. Then, we combined the ten years of data (represented by ten different .csv files) to create a single database.
 Description of preliminary feature engineering and preliminary feature election, including their decision-making process
@@ -195,25 +139,13 @@ Explanation of model choice, including limitations and benefits
 - Next, we will output the balanced accuracy score and the confusion matrix
 - Benefits include sensitivity, but is limited by potentially misidentifying pollutant levels.
 
-
-
-# Visualizations (Tableau Story Board)   Sam
-1. Trend line of top 5 cities/states overall pollution levels for 16-years of historic data.
-2. Top 5 most polluted cities/states levels of each major air pollutants (Nitrogen Dioxide, Sulphur Dioxide, Carbon Monoxide and Ozone).
-3. Geographical heat map showing air quality levels based on historic data.
-4. How should we display the models  predictions for air quality?
-=======
-# Dashboard - Sam
-1. Trend line of top 5 states overall pollution levels for 16-years of historic data.
-2. Index of top 5 most polluted states levels of each major air pollutants (Nitrogen Dioxide, Sulphur Dioxide, Carbon Monoxide and Ozone).
-3. Geographical heat map showing air quality levels based on top 5 polluted states (using AQI color coding see link https://www.airnow.gov/aqi/aqi-basics/)
-4. Trend line to determine future pollution levels for top 5 states.
+# Tableau Dashboard - Michael & Celia
+1. Index of top 6 states overall pollution levels
+3. Geographical heat map showing air quality levels based on top 6 polluted states (using AQI color coding see link https://www.airnow.gov/aqi/aqi-basics/)
+4. Trend line to determine future pollution levels for top 6 states
 
 # Presentation - Celia
 - Working on a power point.
 - Adding some tableau content.
 
 ![image](https://user-images.githubusercontent.com/108438270/204967470-63002131-eca7-4528-be25-696ed49130f4.png)
-
-
-# Presentation - Celia
