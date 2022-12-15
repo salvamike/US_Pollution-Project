@@ -145,7 +145,9 @@ Explanation of model choice, including limitations and benefits
 4. Trend line to determine future pollution levels for top 6 states
 
 # Presentation - Celia
+- Creator and Presenter
 - Working on Google slides
-- Presenter.
+- Link: https://docs.google.com/presentation/d/13dq_zc4rAAR-USSbncoB6YMiK8ahkobbueFvsBRiuxQ/edit?usp=sharing
+
 
 ![image](https://user-images.githubusercontent.com/108438270/204967470-63002131-eca7-4528-be25-696ed49130f4.png)
