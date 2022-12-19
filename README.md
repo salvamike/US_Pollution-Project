@@ -1,5 +1,5 @@
 # US Pollution Project
-![Screenshot](https://github.com/salvamike/US_Pollution-Project/blob/main/Second%20Attempt/US_AQI_Map.png)
+![Screenshot](https://github.com/salvamike/US_Pollution-Project/blob/main/ETL%20%26%20Machine%20Learning/US_AQI_Map.png)
 
 ## Group Members
 1. McKaye Peterson
