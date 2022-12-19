@@ -8,12 +8,12 @@
 
 ## Roles
 1. McKaye Peterson - Machine Learning Model
-2. Celia - Presentation & Visuals
-3. Michael Rodriguez - Github & Visuals
-4. Samantha Borresch - Database & ETL
+2. Celia - Presentation
+3. Michael Rodriguez - Github & HTML
+4. Samantha Borresch - README, Database, ETL & Tableau Dashboard
 
 # Project Topic
-Based on a decade of air quality data from 2012-2022, can we determine the top 5 most overall polluted cilties and top 5 overall least polluted cities and can we use these findings to predict their future AQI levels?
+Based on a decade of air quality data from 2012-2022, can we determine the top 5 most overall polluted cilties and top 5 overall least polluted cities and can we use these findings to predict the 2023 AQI levels?
 
 ## Research Questions
 1. What are the top 5 most overall polluted cities based on AQI data?
@@ -139,10 +139,17 @@ Explanation of model choice, including limitations and benefits
 - Next, we will output the balanced accuracy score and the confusion matrix
 - Benefits include sensitivity, but is limited by potentially misidentifying pollutant levels.
 
-# Tableau Dashboard - Michael & Celia
-1. Index of top 6 states overall pollution levels
-3. Geographical heat map showing air quality levels based on top 6 polluted states (using AQI color coding see link https://www.airnow.gov/aqi/aqi-basics/)
-4. Trend line to determine future pollution levels for top 6 states
+# Github & HTML - Michael
+
+# Tableau Dashboard - Samantha
+1. Story board of all visualizations
+2. Interactive "US AQI Heat Map"
+3. Interactive bar graph of "Top 5 Worst AQI Cities"
+4. Interactive bar graph of "Top 5 Best AQI Cities"
+5. Images of "Top 5 Worst AQI Cities Linear Relationships" between "Year" and "Median AQI" value
+6. Images of "Top 5 Best AQI Cities Linear Relationships" between "Year" and "Median AQI" value
+
+Link to Tableau Public Dashboard: https://public.tableau.com/app/profile/samantha.borresch/viz/US_Pollution_Project/StoryBoard?publish=yes
 
 # Presentation - Celia
 - Creator and Presenter
