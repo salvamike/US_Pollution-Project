@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#mainpageblock{
+    height: 100vh;
+    background-image: url(images/animated1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.titulo{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.logo{
+    margin-top: 20px;
+    width: 125px;
+}
+.square{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: black;
+    margin: 15px 0;
+}
+.readmore-btn{
+    padding: 9px 20px;
+    background: transparent;
+    outline: none;
+    border: 2px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+li{
+    font-size: 18px;
+    line-height: 18px;
+    color: whitesmoke;
+}
+.mainpageblock-text button{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.linea-1{
+    width: 12px;
+    height: 12px;
+    background: black;
+    display: inline-block;
+}
+.linea-2{
+    width: 90px;
+    height: 2px;
+    background: black;
+    display: inline-block;
+}
+.linea-3{
+    width: 70px;
+    height: 1px;
+    background: black;
+    display: inline-block;
+}
+.linea{
+    line-height: 8px;
+}
+#barnavig{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250;
+    top: 0;
+    background: transparent;
+    z-index: 2;
+    transition: .6s;
+}
+nav ul li{
+    list-style: none;
+    margin: 40px 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+#menuBoton{
+    width: 75px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+    color: transparent;
+}
+
+/*----Introduction----*/
+
+#Introduction, #testtres{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Introduction-left-col{
+    flex-basis: 50%;
+}
+.Introduction-left-col img{
+    width: 100%;
+}
+.Introduction-right-col{
+    flex-basis: 50%;
+    text-align: right;
+}
+.Introduction-text{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+
+/*--testdos--*/
+
+#testdos, #helplinks{
+    padding: 100px 0;
+}
+.testdos-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.testdos-right-col{
+    flex-basis: 50%;
+}
+.testdos-right-col img{
+    width: 100%;
+}
+.testdos-left-col{
+   flex-basis: 50%; 
+}
+.testdos-text{
+    max-width: 350px;
+}
+
+/*----footer----*/
+
+#footer{
+    padding: 50px 0 30px;
+}
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid gray;
+}
+
+/*--tableau--*/
+
+#tableau{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tableau-text{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;  
+}

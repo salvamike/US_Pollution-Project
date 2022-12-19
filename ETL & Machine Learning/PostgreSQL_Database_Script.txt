@@ -1,0 +1,32 @@
+-- Create Master Table
+CREATE TABLE Master (
+	"CBSA" VARCHAR(50) NOT NULL,
+	"CBSA Code" INT NOT NULL,
+	"Year" INT NOT NULL,
+	"Days with AQI" INT NOT NULL,
+	"Good Days" INT NOT NULL,
+	"Moderate Days" INT NOT NULL,
+	"Unhealthy for Sensitive Groups Days" INT NOT NULL,
+	"Unhealthy Days" INT NOT NULL,
+	"Very Unhealthy Days" INT NOT NULL,
+	"Hazardous Days" INT NOT NULL,
+	"Max AQI" INT NOT NULL,
+	"90th Percentile AQI" INT NOT NULL,
+	"Median AQI" INT NOT NULL,
+	"Days CO" INT NOT NULL,
+	"Days NO2" INT NOT NULL,
+	"Days Ozone" INT NOT NULL,
+	"Days PM2.5" INT NOT NULL,
+	"Days PM10" INT NOT NULL	
+);
+
+-- Checking Connection of CSV to Master
+select * from master;
+
+-- Make Connection for ETL
+CREATE USER team_members WITH SUPERUSER PASSWORD 'us_pollution';
+
+
+
+
+***Connect data source using right click master table, import.
