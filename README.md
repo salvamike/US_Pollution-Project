@@ -24,22 +24,11 @@ Based on a decade of air quality data from 2012-2022, can we determine the top 5
 ## Why We Selected Topic?
 All members live in the greater Northern Utah area and have an interest in air quality and pollution, as this is a common issue among locals.
 
+# Data Exploration
 ## Data Source
 The data source includes 11 seperate CSV files provided by the United States Environmental Protection Agency (EPA). Each file is the data for each fiscal year.
 
 Link: https://aqs.epa.gov/aqsweb/airdata/download_files.html#Annual
-
-# Data Exploration
-## AQI
-Air Quality Index (AQI) is a scale of 0 to 500 and the higher the AQI value the greater the level of air pollution and health concern. 
-  - Green = Good = 0 to 50 = little to no risk
-  - Yellow = Moderate = 51 to 100 = acceptable
-  - Orange = Unhealth for Sensitive Groups = 101 to 150 = may expereince health effects
-  - Red = Unhealthy = 151 to 200 = may experience health effects
-  - Purple = Very Unhealthy = 201 to 300 = increased risk for health effects
-  - Maroon = Haszardous = 301+ = emergency health condition warning
- 
- Link: https://www.airnow.gov/aqi/aqi-basics/
 
 ## Data Source Metrics
 - CBSA: Metropolitan area
@@ -60,6 +49,17 @@ Air Quality Index (AQI) is a scale of 0 to 500 and the higher the AQI value the 
 - Days Ozone: Count of days with high levels of ground-level ozone
 - Days PM2.5: Count of days with high levels of particle pollutions
 - Days PM10: Count of days with extreme levels of particle pollutions
+
+## What is AQI?
+Air Quality Index (AQI) is a scale of 0 to 500 and the higher the AQI value the greater the level of air pollution and health concern. 
+  - Green = Good = 0 to 50 = little to no risk
+  - Yellow = Moderate = 51 to 100 = acceptable
+  - Orange = Unhealth for Sensitive Groups = 101 to 150 = may expereince health effects
+  - Red = Unhealthy = 151 to 200 = may experience health effects
+  - Purple = Very Unhealthy = 201 to 300 = increased risk for health effects
+  - Maroon = Haszardous = 301+ = emergency health condition warning
+ 
+ Link: https://www.airnow.gov/aqi/aqi-basics/
 
 # Database & ETL - Samantha
 ## Process
