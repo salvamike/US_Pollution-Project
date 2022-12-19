@@ -1,0 +1,94 @@
+# US AIR POLLUTION WEBPAGE
+### Generating the code syntax:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+## ADDING THE TITLE
+    <title>us air pollution project</title>
+## Connecting the css file
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+## Creating id for mainpage section
+    <section id="mainpageblock">
+        <div class="Titulo">
+## Adding a logo on top left corner
+            <img src="images/uofulogo.png"  class="logo">  
+## needed to create a division tag to create different section under logo as titles for the webpage  
+            <div class="mainpageblock-text">
+                <h1>US Air Pollution/Final Project</h1>
+                <h2>Data Analitycs <br>& Visualization Bootcamp</h2>
+## creating an inline container tag as a mark up to divide title for webpage and another section
+                <span class="square"></span>
+## creating a H3 element to start another section with group members
+                <h3>Group Members:</h3>
+## creating a list of group members for this project
+            <ul>
+                <li>McKaye Peterson</li>
+                <li>Celia Carranza</li>
+                <li>Samantha Borresch</li>
+                <li>Michael Rodriguez</li>
+            </ul>
+## creating a button with READ MORE to visualize further below our assigned tasks for this project.
+                <button class="readmore-btn">Read More</button>
+## creating inline container tags as a mark up to divide title for webpage and another section
+                <div class="linea">
+                    <span class="linea-1"></span><br>
+                    <span class="linea-2"></span><br>
+                    <span class="linea-3"></span>
+                </div>
+            </div>
+        </div>
+## Creating section to work on the navigation bar for the menu bar such as display features
+    </section>
+## Creating id for the menu 
+<nav id="barnavig">
+## Creating menu list 
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">test1</a></li>
+        <li><a href="#">test2</a></li>
+        <li><a href="#">test3</a></li>
+        <li><a href="#">test4</a></li>
+        <li><a href="#">test5</a></li>
+        <li><a href="#">test6</a></li>
+    </ul>
+</nav>
+## Adding menu icon image
+    <img src="images/menu_icon.png" id="menuBoton">
+## Creating sections for menu list items
+<!--testuno -->
+
+<section id="testuno">
+    <div class="testuno-left-col">
+        <img src="images/animated4.jpg">
+    </div>
+    <div class="testuno-right-col">
+        <div class="testuno-text">
+            <h1>test1</h1>
+            <p>test1test1test1test1test1test1test1test1test1test1test1test1test1
+            test1test1test1test1test1test1
+            test1test1test1test1test1.</p>
+    </div>
+</div>
+## Creating a tag to add menu mobility, features and content
+    <script>
+        var menuBoton = document.getElementById("menuBoton")
+        var barnavig = document.getElementById("barnavig")
+
+        barnavig.style.right = "-250px";
+        menuBoton.onclick = function(){
+            if (barnavig.style.right == "-250px") {
+                barnavig.style.right = "0";
+                } else {
+                barnavig.style.right = "-250px";
+            }
+        }
+
+    </script>
+</body>
+</html>
