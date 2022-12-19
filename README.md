@@ -147,7 +147,8 @@ Explanation of model choice, including limitations and benefits
 # Presentation - Celia
 - Creator and Presenter
 - Working on Google slides
-- Link: https://docs.google.com/presentation/d/13dq_zc4rAAR-USSbncoB6YMiK8ahkobbueFvsBRiuxQ/edit?usp=sharing
+https://docs.google.com/presentation/d/e/2PACX-1vQz5z_8KfzVfRJkGl4SMdeCbaSOQ0b11xDZOm145ADsOy3D2FwUkeqv7C79ZSXO35Yei33GxuNHah0O/pub?start=true&loop=false&delayms=3000
+
 
 
 ![image](https://user-images.githubusercontent.com/108438270/204967470-63002131-eca7-4528-be25-696ed49130f4.png)
