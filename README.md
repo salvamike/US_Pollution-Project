@@ -60,7 +60,7 @@ Air Quality Index (AQI) is a scale of 0 to 500 and the higher the AQI value the 
 - Days PM2.5: Count of days with high levels of particle pollutions
 - Days PM10: Count of days with extreme levels of particle pollutions
 
-# ETL - Samantha
+# Database & ETL - Samantha
 ## Process
 1. Create ERD for database
 2.Create databse in Postgresql
