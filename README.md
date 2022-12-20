@@ -149,15 +149,6 @@ Explanation of model choice, including limitations and benefits
 - Next, we will output the balanced accuracy score and the confusion matrix
 - Benefits include sensitivity, but is limited by potentially misidentifying pollutant levels.
 
-# Results
-## Findings
-
-## Limitations
-
-## Recommendation for Future Analysis
-
-## What We Would Have Done Differently
-
 # Github & HTML - Michael
 
 # Tableau Dashboard - Samantha
@@ -174,5 +165,14 @@ Explanation of model choice, including limitations and benefits
 Link to Tableau Public Dashboard: https://public.tableau.com/app/profile/samantha.borresch/viz/US_Pollution_Project/StoryBoard?publish=yes
 
 # Presentation - Celia
-- Creator and Presenter
-- Working on Google slides: https://docs.google.com/presentation/d/e/2PACX-1vQz5z_8KfzVfRJkGl4SMdeCbaSOQ0b11xDZOm145ADsOy3D2FwUkeqv7C79ZSXO35Yei33GxuNHah0O/pub?start=true&loop=false&delayms=3000
+Link to Google slides: https://docs.google.com/presentation/d/e/2PACX-1vQz5z_8KfzVfRJkGl4SMdeCbaSOQ0b11xDZOm145ADsOy3D2FwUkeqv7C79ZSXO35Yei33GxuNHah0O/pub?start=true&loop=false&delayms=3000
+
+# Results
+## Findings
+
+## Limitations
+
+## Recommendation for Future Analysis
+
+## What We Would Have Done Differently
+
