@@ -167,6 +167,8 @@ Link to Tableau Public Dashboard: https://public.tableau.com/app/profile/samanth
 # Presentation - Celia
 Link to Google slides: https://docs.google.com/presentation/d/e/2PACX-1vQz5z_8KfzVfRJkGl4SMdeCbaSOQ0b11xDZOm145ADsOy3D2FwUkeqv7C79ZSXO35Yei33GxuNHah0O/pub?start=true&loop=false&delayms=3000
 
+Link to Speaker Notes:
+
 # Results
 ## Findings
 
