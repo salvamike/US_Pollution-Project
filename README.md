@@ -1,65 +1,62 @@
 # US Pollution Project
 ![Screenshot](https://github.com/salvamike/US_Pollution-Project/blob/main/ETL%20%26%20Machine%20Learning/US_AQI_Map.png)
 
-## Group Members
-1. McKaye Peterson
-2. Celia Carranza
-3. Michael Rodriguez
-4. Samantha Borresch
-
-## Roles
+# Introduction
+## Team Roles
 1. McKaye Peterson - Machine Learning Model
 2. Celia - Presentation
 3. Michael Rodriguez - Github & HTML
 4. Samantha Borresch - README, Database, ETL & Tableau Dashboard
 
-# Project Topic
-Based on a decade of air quality data from 2012-2022, can we determine the top 5 most overall polluted cilties and top 5 overall least polluted cities and can we use these findings to predict the 2023 AQI levels?
+## Project Topic
+The United States air quality index (AQI) conversation is a regular topic among news reporters, research topics, and headlines. Living in cities with a lower AQI value, on a 0 to 500 scale, promotes healthy living and minimal respitory issues. In comparison, cities with a higher AQI value may cause respitory issues, infections, and lower quality of living. Understanding how AQI is calculated and the factors that effect the AQI value are beneficial for preserving a good quality of life. This topic raises a question, can we predict AQI? Could this help the general public better understand AQI and assist in their choice of locality? Using government funded AQI data from the United States Environmental Protection Agency (EPA), can we begin to understand how AQI performs over time and make comparable predictions based on selected inputs?
 
 ## Research Questions
-1. What are the top 5 most overall polluted cities based on AQI data?
-2. What are the top 5 most overall least polluted cities based on AQI data?
-2. Can we predict the next year of pollution levels for these cities?
+1. What are the top 5 overall worst AQI cities?
+2. What are the top 5 overall best AQI cities?
+3. Can we build a machine learning model that predicts an AQI value comparable to the actual AQI value for each year for each city using "MedianAQI" and "Year" inputs?
 
 ## Why We Selected Topic?
-All members live in the greater Northern Utah area and have an interest in air quality and pollution, as this is a common issue among locals.
+All members live in the greater Northern Utah area and we have an interest in AQI, as this is a common issue among locals.
 
 # Data Exploration
 ## Data Source
-The data source includes 11 seperate CSV files provided by the United States Environmental Protection Agency (EPA). Each file is the data for each fiscal year.
+The data source includes 11 seperate CSV files provided by the United States Environmental Protection Agency (EPA). Each file holds AQI data for each fiscal year.
 
-Link: https://aqs.epa.gov/aqsweb/airdata/download_files.html#Annual
+Link to the data sources: https://github.com/salvamike/US_Pollution-Project/tree/main/Data_Sources
+
+Link to the EPA: https://aqs.epa.gov/aqsweb/airdata/download_files.html#Annual
 
 ## Data Source Metrics
-- CBSA: Metropolitan area
-- CBSA: Metropolitan area unique identifier code
-- Year: Year data was collected
-- Days with AQI: Count of how many days each CBSA collected AQI data
-- Good Days: Count of how many good days that CBSA had in one fiscal year
-- Moderate Days: Count of how many moderate days that CBSA had in one fiscal year
-- Unhealthy for Sensitive Groups Days: Count of how many unhealthy for sensitive group days that CBSA had in one fiscal year
-- Unhealthy Days: Count of how many unhealthy days that CBSA had in one fiscal year
-- Very Unhealthy Days: Count of how many very unhealthy days that CBSA had in one fiscal year
-- Hazardous Days: Count of how many hazardous days that CBSA had in one fiscal year
-- Max AQI: The highest AQI value for that CBSA within one fical year
-- 90th Percentile AQI: The 90th percentile AQI score for that CBSA within one fiscal year
-- Median AQI: The middle collected value for AQI data for that CBSA within one fiscal year
-- Days CO: Count of days with high levels of carbon monoxide
-- Days NO2: Count of days with high levels of nitrogen dioxide
-- Days Ozone: Count of days with high levels of ground-level ozone
-- Days PM2.5: Count of days with high levels of particle pollutions
-- Days PM10: Count of days with extreme levels of particle pollutions
+- **CBSA**: Metropolitan area
+- **CBSA**: Metropolitan area unique identifier code
+- **Year**: Year data was collected
+- **Days with AQI**: Count of how many days each CBSA collected AQI data
+- **Good Days**: Count of how many good days that CBSA had in one fiscal year
+- **Moderate Days**: Count of how many moderate days that CBSA had in one fiscal year
+- **Unhealthy for Sensitive Groups Days**: Count of how many unhealthy for sensitive group days that CBSA had in one fiscal year
+- **Unhealthy Days**: Count of how many unhealthy days that CBSA had in one fiscal year
+- **Very Unhealthy Days**: Count of how many very unhealthy days that CBSA had in one fiscal year
+- **Hazardous Days**: Count of how many hazardous days that CBSA had in one fiscal year
+- **Max AQI**: The highest AQI value for that CBSA within one fical year
+- **90th Percentile AQI**: The 90th percentile AQI score for that CBSA within one fiscal year
+- **Median AQI**: The middle collected value for AQI data for that CBSA within one fiscal year
+- **Days CO**: Count of days with high levels of carbon monoxide
+- **Days NO2**: Count of days with high levels of nitrogen dioxide
+- **Days Ozone**: Count of days with high levels of ground-level ozone
+- **Days PM2.5**: Count of days with high levels of particle pollutions
+- **Days PM10**: Count of days with extreme levels of particle pollutions
 
 ## What is AQI?
 Air Quality Index (AQI) is a scale of 0 to 500 and the higher the AQI value the greater the level of air pollution and health concern. 
-  - Green = Good = 0 to 50 = little to no risk
-  - Yellow = Moderate = 51 to 100 = acceptable
-  - Orange = Unhealth for Sensitive Groups = 101 to 150 = may expereince health effects
-  - Red = Unhealthy = 151 to 200 = may experience health effects
-  - Purple = Very Unhealthy = 201 to 300 = increased risk for health effects
-  - Maroon = Haszardous = 301+ = emergency health condition warning
+  - **Green** = Good = 0 to 50 = little to no risk
+  - **Yellow** = Moderate = 51 to 100 = acceptable
+  - **Orange** = Unhealth for Sensitive Groups = 101 to 150 = may expereince health effects
+  - **Red** = Unhealthy = 151 to 200 = may experience health effects
+  - **Purple** = Very Unhealthy = 201 to 300 = increased risk for health effects
+  - **Maroon** = Haszardous = 301+ = emergency health condition warning
  
- Link: https://www.airnow.gov/aqi/aqi-basics/
+ Link to understanding AQI: https://www.airnow.gov/aqi/aqi-basics/
 
 # Database & ETL - Samantha
 ## Process
