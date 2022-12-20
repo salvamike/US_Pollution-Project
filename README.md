@@ -88,10 +88,10 @@ Air Quality Index (AQI) is a scale of 0 to 500 and the higher the AQI value the 
 - Features are the variables used to make a prediction. Target is the predicted outcome.
 
 ## Features: 
-- State/City
+- City
 - NO2 AQI, CO2 AQI, SO2 AQI, CO AQI
-- Date (in order to see how the pollution has progressed over time)
-Inspect the relationship between date and pollution levels in certain location 
+- Date by year (in order to see how the pollution has progressed over time)
+Inspect the relationship between year, median aqi (Air Quality Index), and the city over the course of 10 years.
 
 ## Target: 
 - The target VARIABLE is pollution levels, meaning that the goal of the linear regression model is to predict future pollution levels based on historical pollution levels in a given area.
@@ -100,7 +100,7 @@ Package to use: SKlearn.linear_model import LinearRegression
 * Inspect the relationship between state and pollution levels
 
  Supervised learning model: create a model, train the model, and then create predictions.
-* Our database = csv file contained 16 years of pollution data across the united states.
+* Our database = csv file contained 10 years (2012-2022) of pollution data across the united states.
 * Once the ETL process has been completed on the dataset, the we can read in the file to the machine learning model and begin the process.
 
 ## Provisional Machine Learning Model
@@ -116,18 +116,15 @@ Package to use: SKlearn.linear_model import LinearRegression
 We will Use a random state of 1 for each algorithm to ensure consistency between tests
 
 ## Machine Learning Model Goal:
-- This machine learning process will help us predict the future pollutant levels of the states ranked most polluted in 2016. 
+- This machine learning process will help us predict the future pollutant levels of the cities (both the least polluted cities and most polluted cities from our data set) based on previous 10 years. 
 
 ### Output labels for this dataset will be:
 target column values = 
-1. Need to identify the threshold for dangerous levels of pollutants
-* pollutant levels in the form of AQI = classified by "high_levels" and "low_levels"
-feature column values =
-- state and date
+1. predicted AQI for the city in 2023
 
 ## Machine Learning Model 2 Segment Deliverable
 Description of preliminary data preprocessing
-- data preprocessing included finding a combined average of all the pollutants for each state. This required retrieving the average for the added up counties. From there, we were able to get the states average pollutant levels from that year. Then, we combined the ten years of data (represented by ten different .csv files) to create a single database.
+- data preprocessing included finding a combined average of all the pollutants for each city. This required retrieving the average for the added up counties. From there, we were able to get the states average pollutant levels from that year. Then, we combined the ten years of data (represented by ten different .csv files) to create a single database.
 Description of preliminary feature engineering and preliminary feature election, including their decision-making process
 - Feature engineering includes relabeling the column with the combined AQI to be the target, or the dependent variable
 - The categorical variable is the state
