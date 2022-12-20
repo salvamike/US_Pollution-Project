@@ -19,6 +19,27 @@ The United States air quality index (AQI) conversation is a regular topic among 
 ## Why We Selected Topic?
 All members live in the greater Northern Utah area and we have an interest in AQI, as this is a common issue among locals.
 
+## Technologies Used
+- Github
+- CSV Files
+- Quick Database Diagrams
+- Python
+- PostgreSQL
+- Jupyter Notebook
+- Pandas
+- Psycopg2
+- SQLalchemy
+- Numpy
+- Matplotlib
+- Seaborn
+- SKLearn
+- Linear Regression
+- Tableau
+- HTML
+- CSS
+- Google Slides
+- Google Docs
+
 # Data Exploration
 ## Data Source
 The data source includes 11 seperate CSV files provided by the United States Environmental Protection Agency (EPA). Each file holds AQI data for each fiscal year.
@@ -127,6 +148,15 @@ Explanation of model choice, including limitations and benefits
 - Then using BalancedRandomForestClassifier, the data will be resampled
 - Next, we will output the balanced accuracy score and the confusion matrix
 - Benefits include sensitivity, but is limited by potentially misidentifying pollutant levels.
+
+# Results
+## Findings
+
+## Limitations
+
+## Recommendation for Future Analysis
+
+## What We Would Have Done Differently
 
 # Github & HTML - Michael
 
