@@ -89,7 +89,7 @@ Air Quality Index (AQI) is a scale of 0 to 500 and the higher the AQI value the 
 
 ## Features: 
 - City
-- NO2 AQI, CO2 AQI, SO2 AQI, CO AQI
+- Median AQI for that city which is combined data from NO2 AQI, CO2 AQI, SO2 AQI, CO AQI
 - Date by year (in order to see how the pollution has progressed over time)
 Inspect the relationship between year, median aqi (Air Quality Index), and the city over the course of 10 years.
 
