@@ -154,27 +154,52 @@ Explanation of model choice, including limitations and benefits
 # Tableau Dashboard - Samantha
 ## What is included?
 1. Story board of all visualizations
-2. Interactive "US AQI Heat Map"
-3. Interactive bar graph of "Top 5 Worst AQI Cities"
-4. Interactive bar graph of "Top 5 Best AQI Cities"
-5. Images of "Top 5 Worst AQI Cities Linear Relationships" between "Year" and "Median AQI" value
-6. Images of "Top 5 Best AQI Cities Linear Relationships" between "Year" and "Median AQI" value
-7. Images of "Top 5 Worst Predicted vs Actual AQI Line Graph"
-8. Images of "Top 5 Best Predicted vs Actual AQI Line Graph"
+2. Introduction of project topic
+3. Interactive "US AQI Heat Map"
+4. Interactive bar graph of "Top 5 Worst AQI Cities"
+5. Interactive bar graph of "Top 5 Best AQI Cities"
+6. Images of "Top 5 Worst AQI Cities Linear Relationships" between "Year" and "Median AQI" value
+7. Images of "Top 5 Best AQI Cities Linear Relationships" between "Year" and "Median AQI" value
+8. Images of "Top 5 Worst Predicted vs Actual AQI Line Graph"
+9. Images of "Top 5 Best Predicted vs Actual AQI Line Graph"
 
 Link to Tableau Public Dashboard: https://public.tableau.com/app/profile/samantha.borresch/viz/US_Pollution_Project/StoryBoard?publish=yes
 
 # Presentation - Celia
 Link to Google slides: https://docs.google.com/presentation/d/e/2PACX-1vQz5z_8KfzVfRJkGl4SMdeCbaSOQ0b11xDZOm145ADsOy3D2FwUkeqv7C79ZSXO35Yei33GxuNHah0O/pub?start=true&loop=false&delayms=3000
 
-Link to Speaker Notes:
+Link to Speaker Notes: https://docs.google.com/document/d/1dG2VEaVGcyk6v6gsNtsJJ7isXpXbI_ZLk1OziUVK4Xo/edit
 
 # Results
 ## Findings
+### Weak Relationship Between Variables
+
+### Predicted vs Actual AQI Disconnect
 
 ## Limitations
+### Limited Variables
+When building out our project we tested if we could predict each year's "PredictedAQI" based simply upon the historic "MedianAQI" and "Year" data collected by the EPA. However, we determined that "PredictedAQI" can not be predicted accurately on historic "MedianAQI" and "Year" values alone. There is a weak relationship between "Year" and "MedianAQI" for all top 5 cities, as shown in the visuals on the "Top 5 Best - Linear Relationships" and the "Top 5 Worst - Linear Relationships" sections of our [dashboard](https://public.tableau.com/app/profile/samantha.borresch/viz/US_Pollution_Project/StoryBoard?publish=yes) . Therefore more dependent variables, such as weather patterns, wind movements, emissions, etc. need to be added to the machine learning formula to improve the predictive accuracy rate of the indepenent variable "MedianAQI".
+
+### Time Limits
+We believe that if more time was alloted to do data exploration and analysis, that this project would prove a better accuracy rate in "PredictedAQI" for the top 5 best and worst cities. A project with this count of deliverables and it's highly technical nature, proves difficult for many teams albeit an unfamiliar team and 4-weeks. Regardless of the time limit for this project, we believe we demonstrated many skills learned throughout this boot camp and are proud of what we accomplished.
+
+### Technical Skill
+During conversation between the team, all of the members were newer to the subject of data analytics, computer programming, and machine learning. With only 6-months to prepare for a project of this calliber, technical skill is a huge caveat to performance. We all had basic working skills for each section of the project and demonstrated at our best, the knowledge we have obtained. With more practice on technical skills a more refined foundation of this project may have improved our predictive ability.
 
 ## Recommendation for Future Analysis
+### Use More Variables
+
+## Research Other AQI Studies
 
 ## What We Would Have Done Differently
+### Further Clean Records in ETL
+![Screenshot](https://github.com/salvamike/US_Pollution-Project/blob/main/ETL%20%26%20Machine%20Learning/Danville.png)
+
+After running the ETL process and identifying the top 5 best and worst AQI cities, we realized that some of the top 5 cities had fewer records than other cities. For example, when we visualized the linear regresstion relationship between "Year" and "MedianAQI" for "Danville, VA" we noticed there were only two AQI data points ranging from 2021 to 2022. We determined that if we removed records for cities that had fewer than 11 years of AQI data points, that the data would be more sound and compared equally. 
+
+### Polish Visualizations
+![Screenshot](https://github.com/salvamike/US_Pollution-Project/blob/main/ETL%20%26%20Machine%20Learning/Jamestown.png)
+
+During the machine learning model, we built a multiline regression graph that illustrated each top 5 city's "PredictedAQI" and actual "MedianAQI" values. Once visualized, some of the visualizations had different formats for the axis "Year". For example, the above visualization shows "Jamestown, ND" and the x-axis ("Year") is in decimal format compared to the other visualizations being in whole numbers. This is also a product of the above paragraph, "Further Clean Records in ETL". If this step would have been done, the visualizations would have the same count of "Years" and the x-axis identical.
+
 
