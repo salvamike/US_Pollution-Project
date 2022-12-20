@@ -1,4 +1,5 @@
-# US_Pollution-Project
+# US Pollution Project
+![Screenshot](https://github.com/salvamike/US_Pollution-Project/blob/main/ETL%20%26%20Machine%20Learning/US_AQI_Map.png)
 
 ## Group Members
 1. McKaye Peterson
@@ -8,12 +9,12 @@
 
 ## Roles
 1. McKaye Peterson - Machine Learning Model
-2. Celia - Presentation & Visuals
-3. Michael Rodriguez - Github & Visuals
-4. Samantha Borresch - Database & ETL
+2. Celia - Presentation
+3. Michael Rodriguez - Github & HTML
+4. Samantha Borresch - README, Database, ETL & Tableau Dashboard
 
 # Project Topic
-Based on a decade of air quality data from 2012-2022, can we determine the top 5 most overall polluted cilties and top 5 overall least polluted cities and can we use these findings to predict their future AQI levels?
+Based on a decade of air quality data from 2012-2022, can we determine the top 5 most overall polluted cilties and top 5 overall least polluted cities and can we use these findings to predict the 2023 AQI levels?
 
 ## Research Questions
 1. What are the top 5 most overall polluted cities based on AQI data?
@@ -23,22 +24,11 @@ Based on a decade of air quality data from 2012-2022, can we determine the top 5
 ## Why We Selected Topic?
 All members live in the greater Northern Utah area and have an interest in air quality and pollution, as this is a common issue among locals.
 
+# Data Exploration
 ## Data Source
 The data source includes 11 seperate CSV files provided by the United States Environmental Protection Agency (EPA). Each file is the data for each fiscal year.
 
 Link: https://aqs.epa.gov/aqsweb/airdata/download_files.html#Annual
-
-# Data Exploration
-## AQI
-Air Quality Index (AQI) is a scale of 0 to 500 and the higher the AQI value the greater the level of air pollution and health concern. 
-  - Green = Good = 0 to 50 = little to no risk
-  - Yellow = Moderate = 51 to 100 = acceptable
-  - Orange = Unhealth for Sensitive Groups = 101 to 150 = may expereince health effects
-  - Red = Unhealthy = 151 to 200 = may experience health effects
-  - Purple = Very Unhealthy = 201 to 300 = increased risk for health effects
-  - Maroon = Haszardous = 301+ = emergency health condition warning
- 
- Link: https://www.airnow.gov/aqi/aqi-basics/
 
 ## Data Source Metrics
 - CBSA: Metropolitan area
@@ -60,7 +50,18 @@ Air Quality Index (AQI) is a scale of 0 to 500 and the higher the AQI value the 
 - Days PM2.5: Count of days with high levels of particle pollutions
 - Days PM10: Count of days with extreme levels of particle pollutions
 
-# ETL - Samantha
+## What is AQI?
+Air Quality Index (AQI) is a scale of 0 to 500 and the higher the AQI value the greater the level of air pollution and health concern. 
+  - Green = Good = 0 to 50 = little to no risk
+  - Yellow = Moderate = 51 to 100 = acceptable
+  - Orange = Unhealth for Sensitive Groups = 101 to 150 = may expereince health effects
+  - Red = Unhealthy = 151 to 200 = may experience health effects
+  - Purple = Very Unhealthy = 201 to 300 = increased risk for health effects
+  - Maroon = Haszardous = 301+ = emergency health condition warning
+ 
+ Link: https://www.airnow.gov/aqi/aqi-basics/
+
+# Database & ETL - Samantha
 ## Process
 1. Create ERD for database
 2.Create databse in Postgresql
@@ -139,13 +140,20 @@ Explanation of model choice, including limitations and benefits
 - Next, we will output the balanced accuracy score and the confusion matrix
 - Benefits include sensitivity, but is limited by potentially misidentifying pollutant levels.
 
-# Tableau Dashboard - Michael & Celia
-1. Index of top 6 states overall pollution levels
-3. Geographical heat map showing air quality levels based on top 6 polluted states (using AQI color coding see link https://www.airnow.gov/aqi/aqi-basics/)
-4. Trend line to determine future pollution levels for top 6 states
+# Github & HTML - Michael
+
+# Tableau Dashboard - Samantha
+1. Story board of all visualizations
+2. Interactive "US AQI Heat Map"
+3. Interactive bar graph of "Top 5 Worst AQI Cities"
+4. Interactive bar graph of "Top 5 Best AQI Cities"
+5. Images of "Top 5 Worst AQI Cities Linear Relationships" between "Year" and "Median AQI" value
+6. Images of "Top 5 Best AQI Cities Linear Relationships" between "Year" and "Median AQI" value
+
+Link to Tableau Public Dashboard: https://public.tableau.com/app/profile/samantha.borresch/viz/US_Pollution_Project/StoryBoard?publish=yes
 
 # Presentation - Celia
-- Working on a power point.
-- Adding some tableau content.
+- Creator and Presenter
+- Working on Google slides: https://docs.google.com/presentation/d/e/2PACX-1vQz5z_8KfzVfRJkGl4SMdeCbaSOQ0b11xDZOm145ADsOy3D2FwUkeqv7C79ZSXO35Yei33GxuNHah0O/pub?start=true&loop=false&delayms=3000
 
 ![image](https://user-images.githubusercontent.com/108438270/204967470-63002131-eca7-4528-be25-696ed49130f4.png)
