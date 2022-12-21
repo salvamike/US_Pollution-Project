@@ -166,6 +166,40 @@ Explanation of model choice, including limitations and benefits
 
 # Github & HTML - Michael
 
+### Maintaining Github Repository - Process
+
+1. Created repository with Readme file.
+2. Manage individual access to repository.
+3. Created branches for each member of the group.
+4. Assigned each member as a collaborator to gain access to repository.
+5. Send pull requests from branches of the team's assigned repositories.
+6. Approve or request changes to a pull request with required reviews.
+7. Merge a pull request.
+8. Manage branch protection rules.
+9. Periodically reviewing repository for changes to back up any new push.
+10. Performed Repository restoration one ocassion to retrieve lost files.
+
+### HTML Website Development Life Cycle
+[Website link](https://uspollutionproject.000webhostapp.com/)
+
+1. Gathering Information: Purpose, Main Goals, and Target Audience
+This stage, the stage of discovering and researching, determines how the subsequent steps will look like. The most important task at this point was to get a clear understanding of our future website purposes, the main goals we wished to get, and the target audience we wanted to attract to our site. 
+Different types of websites provide visitors with different functionality, which meant that different technologies should be used according to purposes. A well-described and detailed plan based on this pre-development data protected us from spending extra resources on solving the unexpected issues such as design changing or adding the functionality that wasn’t initially planned.
+2. Planning: Sitemap and Wireframe Creation
+At this stage of the website development cycle, the sitemap is created.
+The sitemap described the relations between the main areas of our website. Such representation helped understand how usable the final product was going to be. The main reason behind the sitemap creation is to build a user-friendly and easy to navigate website.
+3. Design: Page Layouts, Review
+The visual layout of the website is its most important element. Took the time exploring our options before settling on the visual imagery and design.  During the design phase, our website started to take shape. All the visual content, such as images, photos, and videos were created at this step. Once again, all the info that was gathered through the first phase was crucial. The purpose and target audience was kept in mind while we worked on the design.
+4. Content Writing and Assembly
+At this step, it was necessary to put in writing the very essence we wanted to visualize with our website. Content writing also involved the creation of catching headlines, text editing, writing new text, compiling the existing text, etc., which took time and effort. 
+5. Coding
+At this step, we were finally started creating the website itself. Graphic elements that were designed during the previous stages were used to create an actual website. home page was created first, and then all sub-pages were added, according to the website hierarchy that was previously created in the form of a sitemap. 
+All static web page elements were designed during the mock-up and layout creation were be created and tested. Then, special features and interactivity was added. A deep understanding of every website development technology that you’re going to use is crucial at this phase.
+6. Testing, Review, and Launch
+Testing was probably the most routine part of the process. Every single link was tested to make sure that there were no broken ones among them. At this stage, we checked every form, every script, run a spell-checking software to find possible typos. Used code validators to check if the code followed the current web standards. .
+After further review, we decided that the best course of action was to host our website in an online service that enabled us to publish our website live. 
+
+
 # Tableau Dashboard - Samantha
 ## What is included?
 1. Story board of all visualizations

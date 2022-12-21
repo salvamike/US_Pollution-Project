@@ -1,7 +1,13 @@
 
 
+<<<<<<< HEAD
+Website link: 
+Click [here]() to go to our website. 
+[Click Here to go to US Pollution website](https://uspollutionproject.000webhostapp.com/)
+=======
 Website link: [Click here to go to our website](https://uspollutionproject.000webhostapp.com/) 
 
+>>>>>>> b6435a1d9ecfb723dfac2d7f1608cbe4e62f24cc
 # US AIR POLLUTION WEBPAGE
 ### Generating the code syntax:
 
