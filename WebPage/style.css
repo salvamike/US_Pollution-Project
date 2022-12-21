@@ -9,7 +9,7 @@
     background-position: center;
     background-size: cover;
 }
-.titulo{
+.margenltor{
     margin-right: 50px;
     margin-left: 50px;
 }
@@ -24,18 +24,10 @@
     background: black;
     margin: 15px 0;
 }
-.readmore-btn{
-    padding: 9px 20px;
-    background: transparent;
-    outline: none;
-    border: 2px solid black;
-    font-weight: bold;
-    cursor: pointer;
-}
 li{
     font-size: 18px;
     line-height: 18px;
-    color: whitesmoke;
+    color: black;
 }
 .mainpageblock-text button{
     margin-top: 20px;
@@ -68,17 +60,17 @@ li{
     position: fixed;
     right: -250;
     top: 0;
-    background: transparent;
+    background: black;
     z-index: 2;
     transition: .6s;
 }
 nav ul li{
     list-style: none;
-    margin: 40px 10px;
+    margin: 80px 20px;
 }
 nav ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 #menuBoton{
     width: 75px;
@@ -89,10 +81,23 @@ nav ul li a{
     cursor: pointer;
     color: transparent;
 }
+#menuBoton:hover {
+    padding: 2.5px 2px;
+    border: 3px solid white;
+  }
+
+/*----Tableaudash----*/
+
+#Tableaudash{
+    padding: 60px 400px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 /*----Introduction----*/
 
-#Introduction, #testtres{
+#Introduction, #Limitations{
     padding: 100px 0;
     display: flex;
     align-items: center;
@@ -114,50 +119,74 @@ nav ul li a{
     display: inline-block;
 }
 
-/*--testdos--*/
+/*--Findings--*/
 
-#testdos, #helplinks{
+#Findings{
     padding: 100px 0;
-}
-.testdos-row{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
-.testdos-right-col{
+.Findings-left-col{
     flex-basis: 50%;
-}
-.testdos-right-col img{
     width: 100%;
-}
-.testdos-left-col{
-   flex-basis: 50%; 
-}
-.testdos-text{
-    max-width: 350px;
+    text-align: right;
 }
 
-/*----footer----*/
-
-#footer{
-    padding: 50px 0 30px;
+.Findings-right-col{
+    flex-basis: 50%;
+    text-align: right;
 }
-hr{
-    width: 100%;
-    border: 0;
-    border-top: 1px solid gray;
-}
-
-/*--tableau--*/
-
-#tableau{
-    padding: 100px 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.tableau-text{
+.Findings-text{
     max-width: 500px;
     margin-right: 100px;
-    display: inline-block;  
+    display: inline-block;
+}
+
+/*--Limitations--*/
+
+#Limitations{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Limitations-left-col{
+    flex-basis: 50%;
+    width: 100%;
+    text-align: right;
+}
+
+.Limitations-right-col{
+    flex-basis: 50%;
+    text-align: right;
+}
+.Limitations-text{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+
+/*--helplinks--*/
+
+#helplinks{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.helplinks-left-col{
+    flex-basis: 50%;
+}
+.helplinks-left-col img{
+    width: 35%;
+}
+.helplinks-right-col{
+    flex-basis: 50%;
+    text-align: left;
+}
+.helplinks-text{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
 }

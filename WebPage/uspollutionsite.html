@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>us air pollution project</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
     <section id="mainpageblock">
-        <div class="titulo">
+        <div class="margenltor">
             <img src="images/uofulogo.png"  class="logo">    
             <div class="mainpageblock-text">
                 <h1>US Air Pollution/Final Project</h1>
@@ -21,8 +22,7 @@
                 <li>Celia Carranza</li>
                 <li>Samantha Borresch</li>
                 <li>Michael Rodriguez</li>
-            </ul>
-                <button class="readmore-btn">Read More</button>
+            </ul><br>
                 <div class="linea">
                     <span class="linea-1"></span><br>
                     <span class="linea-2"></span><br>
@@ -35,16 +35,52 @@
 
 <nav id="barnavig">
     <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">Introduction</a></li>
-        <li><a href="#">test2</a></li>
-        <li><a href="#">test3</a></li>
-        <li><a href="#">Helpful links</a></li>
-        <li><a href="#">Tableau Map</a></li>
-
+        <li><a href="#mainpageblock">HOME</a></li>
+        <li><a href="#Tableaudash">TABLEAU DASHBOARD</a></li>
+        <li><a href="#Introduction">INTRODUCTION</a></li>
+        <li><a href="#Findings">FINDINGS</a></li>
+        <li><a href="#Limitations">LIMITATIONS</a></li>
+        <li><a href="#helplinks">HELPFUL LINKS</a></li>
     </ul>
 </nav>
     <img src="images/menu_icon.png" id="menuBoton">
+
+<!--Tableaudash-->
+
+<section id="Tableaudash">
+    <div class='tableauPlaceholder' 
+    id='viz1671516625048' 
+    style='position: relative'><noscript><a href='#'><img 
+        alt='US Pollution Project2012-2022 Median AQI Data: 
+        https:&#47;&#47;aqs.epa.gov&#47;aqsweb&#47;airdata&#47;download_files.html ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;GY&#47;GYBKHNCXJ&#47;1_rss.png' 
+        style='border: none' ></a></noscript><object 
+        class='tableauViz'  
+        style='display:none;'><param 
+        name='host_url' 
+        value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+        <param name='embed_code_version' value='3' /> 
+        <param name='path' value='shared&#47;GYBKHNCXJ' /> 
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;GY&#47;GYBKHNCXJ&#47;1.png' /> 
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+        <param name='filter' value='publish=yes' />
+        </object>
+        </div>                
+        <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1671516625048');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        vizElement.style.width='1016px';vizElement.style.height='991px';                    
+        var scriptElement = document.createElement('script');                    
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+
+</section>
 
 <!--Introduction-->
 
@@ -54,57 +90,126 @@
     </div>
     <div class="Introduction-right-col">
         <div class="Introduction-text">
-            <h1>Introduction</h1>
-            <p>This final project it is Based on a decade of air quality data from 2012-2022, 
-                can we determine the top 5 most overall polluted cilties and top 5 overall least polluted cities 
-                and can we use these findings to predict the 2023 AQI levels?<br><br><br>
-                Research Questions<br>
-                1. What are the top 5 most overall polluted cities based on AQI data?<br>
-                2. What are the top 5 most overall least polluted cities based on AQI data?<br>
-                3. Can we predict the next year of pollution levels for these cities?</p><br><br>
-                <span class="square"></span>
-    </div>
-</div>
-
-</section>
-
-<!--testdos-->
-
-<section id="testdos">
-    <div class="titulo testdos-row">
-        <div class="testdos-left-col">
-            <div class="testdos-text">
-                <h1>test2</h1>
-                <span class="square"></span>
-                <p>2222222222222222222222222222222222222222222222
-                    222222222222222222222222222222222222222222222
-                    222222222222222222222222.</p><br><br>
+            <h1>Introduction</h1><br>
+            <p>The United States air quality index (AQI) conversation is a regular topic among news reporters, research topics, 
+                and headlines. Living in cities with a lower AQI value, on a 0 to 500 scale, promotes healthy living and minimal
+                 respitory issues. In comparison, cities with a higher AQI value may cause respitory issues, infections, and lower 
+                 quality of living. Understanding how AQI is calculated and the factors that effect the AQI value are beneficial 
+                 for preserving a good quality of life. This topic raises a question, can we predict AQI? Could this help the general 
+                 public better understand AQI and assist in their choice of locality? Using government funded AQI data from the 
+                 United States Environmental Protection Agency (EPA), can we begin to understand how AQI performs over time 
+                 and make comparable predictions based on selected inputs??<br><br><br>
+                <span class="square"></span><br><br><br>
+                <h3>Research Questions</h3><br>
+                <ul>
+                <li>What are the top 5 overall worst AQI cities?</li><br>
+                <li>What are the top 5 overall best AQI cities?</li><br>
+                <li>Can we build a machine learning model that predicts an AQI value comparable to the actual AQI value for each 
+                year for each top 5 city using "MedianAQI" and "Year" inputs?</li></p><br><br>
+                </ul><br>
                 <div class="linea">
                     <span class="linea-1"></span><br>
                     <span class="linea-2"></span><br>
                     <span class="linea-3"></span>
                 </div>
-            </div>
-        </div>
-        <div class="testdos-right-col">
-            <img src="images/animated2.jpg">
-        </div>
     </div>
+</div>
+
 </section>
 
-<!--testtres-->
+<!--Findings-->
 
-<section id="testtres">
-    <div class="testuno-left-col">
-        <img src="images/animated3.jpeg">
+<section id="Findings">
+    <div class="Findings-left-col">
+        <div class="Findings-text"></div>
+        <h1>Findings</h1>
+        <span class="square"></span>
+        <h3>Weak Relationship Between Variables</h3><br>
+        <p>According to the "Top 5 Best - Linear Relationships" and the "Top 5 Worst - Linear Relationships" sections of 
+            our dashboard, there is a weak relationship between our variables "Year" and "MedianAQI" for each city. 
+            An example of "Bakersfield, CA" above domonstrates that each of the line graphs is set up the same for the top 5 best 
+            and worst cities. The x-axis is "Year" and the y-axis is "MedianAQI". 
+            Each point on the graph represents the "MedianAQI" for that corresponding "Year". The blue line is a autogenerated 
+            trend line based on the data. The blue shading is the confidence intervals for each graph. 
+            The confidence interval illustrates a level of uncertainty. The seaborn import during the machine learning model process 
+            has a 95% confidence interval by default. 
+            This mean anthything within the 95% interval is likely to be true and anything outside the confidence interval is likely 
+            to be false. To have a "strong" relationship each point should lie close to the trend line and be within the confidence 
+            interval. 
+            However, many points do not straddle the trend line and some lie outside the confidence interval, which are likely to be 
+            extreme outliers. Therefore, this data shows that a weak relationship exists between our chosen variables and a lack of 
+            accuracy in predicting AQI. In addition most of the trend lines are negative weak meaning they are sloping down and the 
+            points are not close to the trend line. A negative relationship illustrates a negative linear relationship between 
+            "MedianAQI" and "Year". Essentialy, as "Year" increases "MedianAQI" has an inverse relationship, of decreasing.</p><br><br>
+            <h3>Hypotheses for Volatility</h3><br>
+            <ul>
+                <li><b>Wild Fire Spread:</b> these are unpredictable and negatively effect many city's AQI</li><br>
+                <li><b>Covid-19 Relocations:</b> the mass movement of people across the US could be cause for extreme positive/negative spikes in certain cities</li><br>
+                <li><b>Droughts:</b> such as lack of rain fall causing wild fires during summer or bodies of water drying up, which cause an increase in particles in the air</li><br>
+                <li><b>Factory/Plants/Mills/etc.:</b> can all effect AQI by their emissions</li><br>
+            </ul>
     </div>
-    <div class="testuno-right-col">
-        <div class="testuno-text">
-            <h1>test3</h1>
-            <span class="square"></span>
-            <p>333333333333333333333333333333333333333333333333333333333333
-                33333333333333333333333333333333333333333333
-                3333333333333333333333333333333.</p><br><br>
+    <div class="Findings-right-col">
+        <div class="Findings-text">
+            <br><br><br><h3>Predicted vs Actual AQI Disconnect</h3><br>
+            <p>According to the "Top 5 Worst Predicted vs Actual" and the "Top 5 Best Predicted vs Actual" sections of our dashboard, 
+                our machine learning model was unsucessful in predicting AQI. Each top 5 best and worst city has their own graph where 
+                the x-axis is "Year" and the y-axis is "MedianAQI". 
+                There are two lines to show the accuracy of the "PredictedAQI" provided by the machine learning model and the "MedianAQI" 
+                provided by the EPA data. The "Predicted" line is yellow with an x at each data point that represents "PredictedAQI"
+                and the "Actual" line is blue with a dot over each data point that represents "MedianAQI". 
+                All 10 of our cities illustrated a disconnect between the "Acutal" and "Predicted". This demonstrates that AQI cannot be 
+                predicted simply alone by "Year" and "MedianAQI". This also leads us to our largest limitation for the project, 
+                not having enough variables to build and teach our machine learning model to predict AQI more accurately. 
+                Although we cannot draw accuracy from these graphs we can hypothesize what causes positive and negative spikes in the 
+                "Actual" line that could be used to perfect the model in future research projects. See the next finding 
+                "Hypotheses for Volatitlity" to see other possibly assumptions to why "Actual" and "Predicted" are vastly different, 
+                seperate from lack of variables limitation.</p><br><br><br><br>
+            <div class="linea">
+                <span class="linea-1"></span><br>
+                <span class="linea-2"></span><br>
+                <span class="linea-3"></span>
+            </div>
+    </div>
+</div>
+
+</section>
+
+<!--Limitations-->
+
+<section id="Limitations">
+    <div class="Limitations-left-col">
+        <div class="Limitations-text"></div>
+        <h1>Limitations</h1>
+        <span class="square"></span>
+        <h3>Limited Variables</h3><br>
+        <p>When building out our project we tested if we could predict each year's "PredictedAQI" 
+            based simply upon the historic "MedianAQI" and "Year" data collected by the EPA. 
+            However, we determined that "PredictedAQI" can not be predicted accurately on historic "MedianAQI" 
+            and "Year" values alone. There is a weak relationship between "Year" and "MedianAQI" 
+            for all top 5 cities, as shown in the visuals on the "Top 5 Best - Linear Relationships" 
+            and the "Top 5 Worst - Linear Relationships" sections of our dashboard. 
+            Therefore more dependent variables, such as weather patterns, wind movements, emissions, etc. 
+            need to be added to the machine learning formula to improve the predictive accuracy rate 
+            of the indepenent variable "MedianAQI".</p><br><br>
+        <h3>Technical Skill</h3><br>
+        <p>During conversation between the team, all of the members were newer to the subject of data analytics, 
+            computer programming, and machine learning. With only 6-months to prepare for a project of this calliber, 
+            technical skill is a huge caveat to performance. We all had basic working skills for each section 
+            of the project and demonstrated at our best, the knowledge we have obtained. 
+            With more practice on technical skills a more refined foundation of this project may have improved 
+            our predictive ability.</p><br>
+    </div>
+    <div class="Limitations-right-col">
+        <div class="Limitations-text">
+            <br><br><br><h3>Time Limits</h3><br>
+            <p>We believe that if more time was alloted to do data exploration and analysis, 
+                that this project would prove a better accuracy rate in "PredictedAQI" for the top 5 best 
+                and worst cities. 
+                A project with this count of deliverables and it's highly technical nature, 
+                proves difficult for many teams albeit an unfamiliar team and 4-weeks. Regardless of the
+                time limit for this project, we believe we demonstrated many skills learned throughout this 
+                boot camp and are proud of what we accomplished.</p><br><br><br><br><br>
             <div class="linea">
                 <span class="linea-1"></span><br>
                 <span class="linea-2"></span><br>
@@ -118,71 +223,19 @@
 <!----helplinks---->
 
 <section id="helplinks">
-    <div class="titulo helplinks-row">
-        <div class="helplinks-left-col">
-            <div class="helplinks-text">
-                <h1>Helpful Links</h1>
-                <span class="square"></span>
-                <p>Github: https://github.com/salvamike/US_Pollution-Project<br>
-                   Data Source: https://aqs.epa.gov/aqsweb/airdata/download_files.html#Annual<br>
-                   Air Quality Index (AQI) Basics: https://www.airnow.gov/aqi/aqi-basics/<br>
-                   Tableau Public Dashboard: https://public.tableau.com/app/profile/samantha.borresch/viz/US_Pollution_Project/StoryBoard?publish=yes</p><br><br>
-                <div class="linea">
-                    <span class="linea-1"></span><br>
-                    <span class="linea-2"></span><br>
-                    <span class="linea-3"></span>
-                </div>
-            </div>
-        </div>
-        <div class="helplinks-right-col">
-            <img src="images/links.png">
-        </div>
+    <div class="helplinks-left-col">
+        <img align="right" src="images/links.png">
     </div>
-</section>
-
-<!--TableauMap-->
-
-<section id="tableau">
-    <div class='tableauPlaceholder' id='viz1671450121149' 
-    style='position: relative'><noscript>
-    <a href='#'><img alt='US Pollution Project2012-2022 Median AQI Data: https:&#47;&#47;aqs.epa.gov&#47;aqsweb&#47;airdata&#47;download_files.html 
-    ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;US_Pollution_Project&#47;StoryBoard&#47;1_rss.png' 
-    style='border: none' 
-    /></a></noscript><object class='tableauViz'  
-    style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' 
-    /><param name='embed_code_version' value='3' /> <param name='site_root' value='' 
-    /><param name='name' value='US_Pollution_Project&#47;StoryBoard' 
-    /><param name='tabs' value='no' /><param name='toolbar' value='yes' 
-    /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;US_Pollution_Project&#47;StoryBoard&#47;1.png' 
-    /><param name='animate_transition' value='yes' 
-    /><param name='display_static_image' value='yes' 
-    /><param name='display_spinner' value='yes' 
-    /><param name='display_overlay' value='yes' 
-    /><param name='display_count' value='yes' 
-    /><param name='language' value='en-US' 
-    /><param name='filter' value='publish=yes' 
-    /></object></div>                
-    <script type='text/javascript'>                    
-    var divElement = document.getElementById('viz1671450121149');                    
-    var vizElement = divElement.getElementsByTagName('object')[0];                    
-    vizElement.style.width='1016px';vizElement.style.height='991px';                    
-    var scriptElement = document.createElement('script');                    
-    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-    </script>
-<div class="tableau-right-col">
-        <div class="tableau-text">
-            <h1>Tableau Dashboard</h1>
-        </div>   
-</section>
-
-<!--Footer-->
-
-<section id="footer">
-    <div class="titulo">
-        <hr>
+    <div class="helplinks-right-col">
+        <div class="helplinks-text">
+            <h1>Helpful Links</h1>
+            <span class="square"></span>
+    <p>Github: <br><a href="https://github.com/salvamike/US_Pollution-Project" target="_blank">US Pollution Project Github Repository</a><br><br>
+    <p>Data Source: <br><a href="https://aqs.epa.gov/aqsweb/airdata/download_files.html#Annual" target="_blank">US Environmental Protection page</a><br><br>   
+    <p>Air Quality Index (AQI) Basics: <br><a href="https://www.airnow.gov/aqi/aqi-basics/" target="_blank">AirNow page</a><br><br>           
+    <p>Tableau Public Dashboard: <br><a href="https://public.tableau.com/app/profile/samantha.borresch/viz/US_Pollution_Project/StoryBoard?publish=yes" target="_blank">US Pollution Project Tableau Visualization page</a><br><br>    
     </div>
-</section>
+</div>
 
     <script>
         var menuBoton = document.getElementById("menuBoton")
@@ -199,5 +252,13 @@
 
     </script>
 </body>
+
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
+</script>
+
 </html>
 
