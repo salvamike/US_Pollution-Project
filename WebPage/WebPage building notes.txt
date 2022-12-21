@@ -1,6 +1,7 @@
 
 
-Website link: [https://uspollutionproject.000webhostapp.com/]
+Website link: 
+Click [here](https://uspollutionproject.000webhostapp.com/) to go to our website. 
 
 # US AIR POLLUTION WEBPAGE
 ### Generating the code syntax:
