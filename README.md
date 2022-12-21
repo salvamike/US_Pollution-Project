@@ -159,7 +159,6 @@ Description and explanation of model’s confusion matrix, including final accur
 - Explanation: MAE is a measure of the average error between the predictions and intended targets, thus we want to minimise this value. So 2.5 shows that the model is not too far off from the actual dataset.
 - The Mean Squared Error measures how close a regression line is to a set of data points.
 - The RMSE is the square root of the variance of the residuals. It indicates the absolute fit of the model to the data–how close the observed data points are to the model's predicted values.
-![Screen Shot 2022-12-20 at 10 45 59 PM](https://user-images.githubusercontent.com/106174279/208830853-51289227-9e6c-4b14-8875-3a0b02f33e2c.png)
 Problem we are solving
 - Our goal is to train a linear regression model to see if the air quality reality is comparable to the predicted.
 Future statistical analysis:
