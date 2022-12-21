@@ -151,17 +151,17 @@ Explanation of model choice, including limitations and benefits
 - Benefits for using this model include sensitivity, but is limited by potentially misidentifying pollutant levels.
 
 ## Deliverable 4 Machine learning model
-Description of feature engineering and the feature selection, including the team's decision-making process
+#### Description of feature engineering and the feature selection, including the team's decision-making process
 - We wanted to view the trend in data from the past ten years and see how the machine learning model would do to predict the data based on actual results
-Description of how model was trained. 
+#### Description of how model was trained. 
 - Model was trained by splitting the data into test and train sets for both X and Y which are the year and median AQI respectively.
-Description and explanation of model’s confusion matrix, including final accuracy score and statistical analysis
+#### Description and explanation of model’s confusion matrix, including final accuracy score and statistical analysis
 - Explanation: MAE is a measure of the average error between the predictions and intended targets, thus we want to minimise this value. So 2.5 shows that the model is not too far off from the actual dataset.
 - The Mean Squared Error measures how close a regression line is to a set of data points.
 - The RMSE is the square root of the variance of the residuals. It indicates the absolute fit of the model to the data–how close the observed data points are to the model's predicted values.
-Problem we are solving
+#### Problem we are solving
 - Our goal is to train a linear regression model to see if the air quality reality is comparable to the predicted.
-Future statistical analysis:
+#### Future statistical analysis:
 - Running statistical tests to see the relation between the datapoints instead of just viewing and interpreting them visually.
 
 # Github & HTML - Michael
