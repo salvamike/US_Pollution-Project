@@ -119,15 +119,14 @@ Inspect the relationship between state and pollution levels.
 - Our database = csv file contained 11 years (2012-2022) of pollution data across the united states.
 - Once the ETL process has been completed on the dataset, the we can read in the file to the machine learning model and begin the process.
 
-## Provisional Machine Learning Model
+## Provisional/Final Machine Learning Model
 Our process will include the following:
 - Reading in the ETL Dataset
-- Splitting the data into training and testing (the data will be split by its features and target, which are mentioned above)
+- Splitting the data into training and testing (the data will be split by its features and target, which are the year and median aqi)
 - Train the model using the training data. 
 - Calculate the balanced accuracy score from sklearn.metrics.
-- Print the confusion matrix from sklearn.metrics.
-- Generate a classication report using the `imbalanced_classification_report` from imbalanced-learn.
-- For the Balanced Random Forest Classifier onely, print the feature importance sorted in descending order (most important feature to least important) along with the feature score
+- Check the distribution of the model
+- Begin working with the actual dataset in order to visualize predicted aqi and actual aqi for each top 5 polluted city and state
 - We will Use a random state of 1 for each algorithm to ensure consistency between tests
 
 ## Machine Learning Model Goal
@@ -135,19 +134,21 @@ Can we build a machine learning model that predicts an AQI value comparable to t
 
 ## Machine Learning Model 2 Segment Deliverable
 Description of preliminary data preprocessing:
-- Data preprocessing included finding a combined average of all the pollutants for each city. This required retrieving the average for the added up counties. From there, we were able to get the states average pollutant levels from that year. Then, we combined the ten years of data (represented by ten different .csv files) to create a single database.
+- Data preprocessing included retreiving all eleven files and combining them into one dataframe. From there the dataset was sorted by worst and best aqi levels. 
 Description of preliminary feature engineering and preliminary feature election, including their decision-making process
 - Feature engineering includes relabeling the column with the combined AQI to be the target, or the dependent variable
 - The categorical variable is the state
 - The date will be relabeled to be the independent variable
 
 Description of how data was split into training and testing sets:
-- seperate the data into its features and targets
+- Seperate the data into its features and targets (Years and Median AQI)
+- Used from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
 Explanation of model choice, including limitations and benefits
 - We will be using sklearn.model_selection to train_test_split
-- Then using BalancedRandomForestClassifier, the data will be resampled
-- Next, we will output the balanced accuracy score and the confusion matrix
-- Benefits include sensitivity, but is limited by potentially misidentifying pollutant levels.
+- Then we will perform the analysis on the training set using the sklearn linear regression model
+- Next, we will output the coeffecients. We only had two variables so the data doesn't seem to be too accurate
+- Benefits for using this model include sensitivity, but is limited by potentially misidentifying pollutant levels.
 
 # Github & HTML - Michael
 
